@@ -47,7 +47,7 @@ header {
   grid-auto-flow: column;
   grid-template-columns: 0.9fr 1fr 1.2fr;
   background: var(--purple-bg);
-  padding: 4.5vw 9.5vw;
+  padding: 6.4rem 13.6rem 0;
 }
 
 #logo {
@@ -59,7 +59,7 @@ header {
   max-height: 3.7rem;
 }
 
-ul {
+nav ul {
   font-family: 'Roboto', sans-serif;
   font-size: 1.8rem;
   height: 4.5rem;
@@ -69,6 +69,10 @@ ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+nav ul li:hover {
+  font-weight: 700;
 }
 
 .bold {
@@ -92,7 +96,7 @@ a span {
   justify-content: flex-end;
 }
 
-input {
+#search input {
   background: var(--dark-bg);
   padding: 0 1vw;
   border: 0;
@@ -103,8 +107,20 @@ input {
   width: 23rem;
 }
 
-input::placeholder {
+#search input::placeholder {
   color: var(--light-purple);
+}
+
+#search button {
+  background: var(--button-bg);
+  padding: 0 1.5vw;
+  border-radius: 0 0.5rem 0.5rem 0;
+  border: 0;
+  cursor: pointer;
+}
+
+#search button:enabled {
+  color: blue;
 }
 
 /* Main */
@@ -121,7 +137,7 @@ main {
   display: flex;
   justify-content: space-between;
 
-  padding: 0 9.5vw 4.5vw;
+  padding: 6.4rem 13.6rem;
 }
 
 #main-text {
@@ -146,14 +162,6 @@ p a {
   font-family: 'Roboto', sans-serif;
 }
 
-button {
-  background: var(--button-bg);
-  padding: 0 1.5vw;
-  border-radius: 0 0.5rem 0.5rem 0;
-  border: 0;
-  cursor: pointer;
-}
-
 #see-more {
   display: flex;
   align-items: center;
@@ -167,6 +175,7 @@ button {
   display: flex;
   padding-left: 0.8rem;
 }
+
 /* Line */
 
 #green-line {
@@ -185,7 +194,7 @@ button {
 /* Content */
 
 #content {
-  padding: 4.5vw 9.5vw;
+  padding: 6.4rem 13.6rem;
   background: var(--light-purple);
 }
 
@@ -194,13 +203,14 @@ button {
   justify-content: space-between;
   align-items: initial;
   padding-bottom: 6.4rem;
+  gap: 13rem;
 }
 
 #post-1 {
   max-width: 57.2rem;
 }
 
-aside {
+#right-posts {
   max-width: 47.2rem;
 }
 
