@@ -20,7 +20,7 @@
 }
 
 body {
-  min-width: 144rem;
+  min-width: 1440px;
 }
 
 a:-webkit-any-link {
@@ -123,9 +123,14 @@ a span {
   color: blue;
 }
 
+#open-nav,
+#close-nav {
+  display: none;
+}
+
 /* Main */
 
-h1 {
+main h1 {
   color: var(--button-bg);
   font-family: 'Poppins', sans-serif;
   font-size: 3.6rem;
@@ -140,14 +145,14 @@ main {
   padding: 6.4rem 13.6rem;
 }
 
-#main-text {
+main #main-text {
   display: flex;
   flex-flow: column;
   max-width: 49rem;
   line-height: 5.4rem;
 }
 
-#text {
+main p {
   color: var(--light-purple);
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -157,7 +162,7 @@ main {
   line-height: 2.7rem;
 }
 
-p a {
+main p a {
   color: var(--button-bg);
   font-family: 'Roboto', sans-serif;
 }
@@ -245,4 +250,67 @@ h2 {
 
 article img {
   padding-bottom: 1.6rem;
+}
+
+/* Tablet */
+
+@media (max-width: 800px) {
+  body {
+    min-width: 100vw;
+  }
+
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 8rem;
+    padding-top: 4rem;
+    padding-bottom: 0.1rem;
+  }
+
+  #logo {
+    height: 6rem;
+  }
+
+  nav ul,
+  #search {
+    display: none;
+  }
+
+  #open-nav {
+    display: block;
+  }
+
+  #open-nav button {
+    background: transparent;
+    border: none;
+  }
+
+  #open-nav button svg {
+    width: 6rem;
+    height: 6rem;
+    fill: white;
+  }
+
+  /* Main */
+
+  main {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 8rem;
+    padding-top: 5rem;
+  }
+
+  main #main-text {
+    max-width: 100rem;
+  }
+
+  main p {
+    padding-bottom: 0.5rem;
+    max-width: 100rem;
+  }
+
+  main #see-more {
+    padding-bottom: 2rem;
+  }
 }
