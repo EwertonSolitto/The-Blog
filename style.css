@@ -98,7 +98,7 @@ a span {
 
 #search input {
   background: var(--dark-bg);
-  padding: 0 1vw;
+  padding: 0 2.6rem;
   border: 0;
   color: var(--light-purple);
   border-radius: 0.5rem 0 0 0.5rem;
@@ -113,7 +113,7 @@ a span {
 
 #search button {
   background: var(--button-bg);
-  padding: 0 1.5vw;
+  padding: 0 2.3rem;
   border-radius: 0 0.5rem 0.5rem 0;
   border: 0;
   cursor: pointer;
