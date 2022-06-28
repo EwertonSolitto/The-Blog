@@ -189,11 +189,15 @@ main p a {
   height: 0.6rem;
 }
 
-#gray-line {
+#content .gray-line {
   background-color: var(--light-grey);
   width: auto;
   height: 0.1rem;
   margin: 2.4rem 0;
+}
+
+#content .mobile-line {
+  display: none;
 }
 
 /* Content */
@@ -203,7 +207,7 @@ main p a {
   background: var(--light-purple);
 }
 
-#posts-top {
+#top-posts {
   display: flex;
   justify-content: space-between;
   align-items: initial;
@@ -219,12 +223,12 @@ main p a {
   max-width: 47.2rem;
 }
 
-#posts-bottom {
+#bottom-posts {
   display: flex;
   justify-content: space-between;
 }
 
-#posts-bottom article {
+#bottom-posts article {
   max-width: 37.2rem;
 }
 
@@ -312,5 +316,62 @@ article img {
 
   main #see-more {
     padding-bottom: 2rem;
+  }
+
+  /* Line */
+
+  #content .mobile-line {
+    display: block;
+  }
+
+  /* Content */
+
+  #content {
+    padding: 5rem 8rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #content #top-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    padding-bottom: 0;
+  }
+
+  #content #post-1 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #content #post-1 img {
+    padding-block: 2rem 0;
+    width: 75%;
+  }
+
+  #content #post-1,
+  #content #right-posts {
+    max-width: 100rem;
+  }
+
+  #content #bottom-posts {
+    flex-direction: column;
+  }
+
+  #content #bottom-posts article {
+    max-width: 100rem;
+  }
+
+  #content #bottom-posts img {
+    width: 75%;
+    padding-block: 2rem 0;
+  }
+
+  #content #bottom-posts #post-2,
+  #content #bottom-posts #post-3,
+  #content #bottom-posts #post-4 {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
