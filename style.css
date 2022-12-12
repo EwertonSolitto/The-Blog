@@ -23,6 +23,11 @@ body {
   min-width: 1440px;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
 a:-webkit-any-link {
   color: inherit;
   text-decoration: none;
@@ -42,7 +47,7 @@ a:-webkit-any-link {
 
 /* Header */
 
-header {
+#header {
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 0.9fr 1fr 1.2fr;
