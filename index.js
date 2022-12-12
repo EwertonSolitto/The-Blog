@@ -1,11 +1,11 @@
 function openMenu() {
-  const openButton = document.getElementById('header')
+  const header = document.getElementById('header')
 
-  openButton.classList.add('opened-menu')
+  header.classList.add('opened-menu')
 }
 
 function closeMenu() {
-  const openButton = document.getElementById('header')
+  const header = document.getElementById('header')
 
-  openButton.classList.remove('opened-menu')
+  header.classList.remove('opened-menu')
 }
