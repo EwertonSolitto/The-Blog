@@ -1,17 +1,39 @@
 # RocketBlog 🚀
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/EwertonSolitto/RocketBlog/blob/main/LICENSE)
 
-Landing page de um blog feita no desafio da Rocketseat.
+# About
 
-<hr/>
+https://ewertonsolitto.github.io/RocketBlog/
 
-## Tecnologias usadas:
+**RocketBlog** is a Front End application built on a challenge made by [Rocketseat](https://app.rocketseat.com.br).
 
-• HTML
-<br/>
-• CSS
-<br/>
-• JAVASCRIPT
+# Layout Web
 
-<hr/>
+<img src="https://github.com/EwertonSolitto/RocketBlog/blob/main/images/readMe/web.png" />
 
-<a href="https://ewertonsolitto.github.io/RocketBlog/">Link da Página</a>
+# Layout Mobile
+
+<p>
+  <img src="https://github.com/EwertonSolitto/RocketBlog/blob/main/images/readMe/mobile1.jpg" height="832"/>
+  <img src="https://github.com/EwertonSolitto/RocketBlog/blob/main/images/readMe/mobile2.jpg" height="832"/>
+</p>
+
+# Technologies
+ 
+ - HTML
+
+ - CSS
+
+ - JAVASCRIPT
+
+# Download
+
+```bash
+
+# Clone repository
+git clone https://github.com/EwertonSolitto/RocketBlog.git
+
+# Open file
+index.html
+
+```
