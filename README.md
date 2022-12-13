@@ -14,8 +14,8 @@ https://ewertonsolitto.github.io/RocketBlog/
 # Layout Mobile
 
 <p>
-  <img src="https://github.com/EwertonSolitto/RocketBlog/blob/main/images/readMe/mobile1.jpg" height="832"/>
-  <img src="https://github.com/EwertonSolitto/RocketBlog/blob/main/images/readMe/mobile2.jpg" height="832"/>
+  <img src="https://github.com/EwertonSolitto/RocketBlog/blob/main/images/readMe/mobile1.jpg" height="830"/>
+  <img src="https://github.com/EwertonSolitto/RocketBlog/blob/main/images/readMe/mobile2.jpg" height="830"/>
 </p>
 
 # Technologies
