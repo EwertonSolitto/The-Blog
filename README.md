@@ -26,7 +26,7 @@ https://ewertonsolitto.github.io/RocketBlog/
 
  - JAVASCRIPT
 
-# Download
+# Installation
 
 ```bash
 
