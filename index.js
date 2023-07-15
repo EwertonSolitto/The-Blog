@@ -1,11 +1,9 @@
-function openMenu() {
+function handleMenu() {
   const header = document.getElementById('header')
 
-  header.classList.add('opened-menu')
-}
-
-function closeMenu() {
-  const header = document.getElementById('header')
-
-  header.classList.remove('opened-menu')
+  if (header.classList.contains('opened-menu')) {
+    return header.classList.remove('opened-menu')
+  } else {
+    return header.classList.add('opened-menu')
+  }
 }
