@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>The Blog - Sobre</title>
+</head>
+<body>
+  <header>
+    <div id="header">
+        <div id="logo">
+            <a href="./index.html">The Blog<span>.</span></a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li class="bold"><a href="./pages/about.html"><span>|</span>Sobre</a></li>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <div id="search">
+            <label 
+            for="search" 
+            class="sr-only">Campo de Busca:</label>
+            <input 
+            type="search" 
+            id="search-button"
+            name="search"
+            placeholder="Buscar">
+            <button><img src="../images/search.svg" alt="Botão de pesquisa" id="button"></button>
+        </div>
+        <div id="menu-button">
+            <button id='open-button' onclick="handleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#4D7FA8" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="40" y1="128" x2="216" y2="128" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="40" y1="64" x2="216" y2="64" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="40" y1="192" x2="216" y2="192" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+            </button>
+            <button id="close-button" onclick="handleMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#4D7FA8" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="200" y1="56" x2="56" y2="200" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="200" y1="200" x2="56" y2="56" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+            </button>
+        </div>
+    </div>    
+  </header>
+
+  <div id="yellow-line"></div>
+
+  <main id="about">
+    <div>
+      <h1>Sobre nós</h1>
+
+      <p>Este blog foi criado com o objetivo de ser um espaço dedicado à programação e tudo o que a envolve. Aqui, queremos compartilhar conhecimentos, explorar tendências e discutir as últimas novidades no mundo da programação.</p>
+      <p>
+        Acreditamos que a programação é uma habilidade essencial nos dias de hoje. Com o avanço da tecnologia e a digitalização de diversos setores, a demanda por profissionais de programação só tende a crescer. Nosso objetivo é oferecer um ambiente amigável e informativo para aqueles que desejam aprender a programar, aprimorar suas habilidades ou simplesmente acompanhar as últimas tendências.
+      </p>
+      <p>
+        Nossa equipe de redatores é composta por entusiastas e profissionais experientes na área de programação. Estamos constantemente pesquisando e explorando novas tecnologias, linguagens de programação, frameworks e ferramentas. Queremos trazer para você as melhores dicas, tutoriais, análises e insights que ajudarão a impulsionar sua jornada como desenvolvedor(a).
+      </p>
+      <p>
+        Além disso, queremos construir uma comunidade ativa e engajada. Valorizamos a participação dos nossos leitores e incentivamos a troca de ideias, opiniões e experiências nos comentários. Acreditamos que o compartilhamento de conhecimento e a colaboração são fundamentais para o crescimento individual e coletivo.
+      </p>
+      <p>
+        Fique à vontade para explorar nossos artigos, tutoriais e recursos. Esperamos que você encontre inspiração, aprendizado e soluções para os desafios que possa enfrentar como programador(a). Se você tiver alguma dúvida, sugestão de tópico ou apenas quiser dizer "olá", não hesite em entrar em contato conosco. Estamos aqui para ajudar.
+      </p>
+      <p>
+        Obrigado por nos visitar e fazer parte da nossa comunidade. Junte-se a nós nessa jornada de aprendizado e descobertas no fascinante mundo da programação!
+      </p>
+    </div>
+  </main>
+
+  <script src="../index.js"></script>
+</body>
+</html>
