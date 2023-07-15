@@ -483,6 +483,10 @@ main#categories p {
 
   /* Main */
 
+  main {
+    padding: 0;
+  }
+
   #main {
     display: flex;
     flex-direction: column;
@@ -563,11 +567,14 @@ main#categories p {
     flex-direction: column-reverse;
   }
 
-  /* About */
+  /* About & Categories */
 
-  main#categories > div {
+  main#categories > div,
+  main#about > div {
     padding-inline: 8rem;
   }
+
+  /* Categories */
 
   main#categories .posts-list {
     grid-template-columns: 1fr;
@@ -608,16 +615,17 @@ main#categories p {
     width: 100%;
   }
 
-  /* About */
+  /* About & Categories */
 
-  main#categories > div {
+  main#categories > div,
+  main#about > div {
     padding-inline: 2rem;
   }
 }
 
 @media (max-width: 400px) {
   
-  /* About */
+  /* Categories */
 
   main#categories img {
     height: 16rem;
