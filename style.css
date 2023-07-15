@@ -347,7 +347,6 @@ main#categories .posts-list {
 main#categories .category-post {
   display: flex;
   flex-direction: column;
-  height: 40rem;
   margin-bottom: 1.6rem;
 }
 
@@ -566,8 +565,12 @@ main#categories p {
 
   /* About */
 
+  main#categories > div {
+    padding-inline: 8rem;
+  }
+
   main#categories .posts-list {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 }
 
@@ -607,7 +610,16 @@ main#categories p {
 
   /* About */
 
-  main#categories .posts-list {
-    grid-template-columns: 1fr
+  main#categories > div {
+    padding-inline: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  
+  /* About */
+
+  main#categories img {
+    height: 16rem;
   }
 }
