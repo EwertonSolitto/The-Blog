@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>The Blog - Descubra as principais tendências em linguagens de programação para 2023</title>
+</head>
+<body>
+  <header>
+    <div id="header">
+        <div id="logo">
+            <a href="../../index.html">The Blog<span>.</span></a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../about.html">Sobre</a></li>
+                <li><a href="../categories.html">Categorias</a></li>
+                <li><a href="../contact.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div id="search">
+            <label 
+            for="search" 
+            class="sr-only">Campo de Busca:</label>
+            <input 
+            type="search" 
+            id="search-button"
+            name="search"
+            placeholder="Buscar">
+            <button><img src="../../images/search.svg" alt="Botão de pesquisa" id="button"></button>
+        </div>
+        <div id="menu-button">
+            <button id='open-button' onclick="handleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#4D7FA8" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="40" y1="128" x2="216" y2="128" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="40" y1="64" x2="216" y2="64" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="40" y1="192" x2="216" y2="192" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+            </button>
+            <button id="close-button" onclick="handleMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#4D7FA8" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="200" y1="56" x2="56" y2="200" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="200" y1="200" x2="56" y2="56" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+            </button>
+        </div>
+    </div>    
+  </header>
+
+  <div id="yellow-line"></div>
+
+  <main class="main-post">
+    <div>
+      <h1>Dicas e truques para acelerar o desenvolvimento de aplicativos</h1>
+    </div>  
+  </main>
+
+  <footer>
+    <div>
+        <div id="logo">
+            <a href="../../index.html">The Blog<span>.</span></a>
+        </div>
+        <p>© 2023 The Blog. | Todos os Direitos Reservados</p>
+    </div>
+  </footer>
+
+  <script src="../../index.js"></script>
+</body>
+</html>
