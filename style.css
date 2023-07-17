@@ -58,6 +58,11 @@ footer > div {
   width: 1440px;
 }
 
+h2 > a:hover,
+h2 > a:focus {
+  text-decoration: underline;
+}
+
 /* Header */
 
 header {
