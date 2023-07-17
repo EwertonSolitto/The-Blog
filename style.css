@@ -59,7 +59,9 @@ footer > div {
 }
 
 h2 > a:hover,
-h2 > a:focus {
+h2 > a:focus,
+h3 > a:hover,
+h3 > a:focus {
   text-decoration: underline;
 }
 
