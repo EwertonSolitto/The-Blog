@@ -250,11 +250,11 @@ main {
   gap: 13rem;
 }
 
-#post-1 {
+#post-2 {
   max-width: 57.2rem;
 }
 
-#post-1 img {
+#post-2 img {
   width: 56.9rem;
   height: 34.243rem;
   border-radius: 1.2rem;
@@ -570,19 +570,19 @@ main.main-post div strong {
     padding-bottom: 0;
   }
 
-  #posts #post-1 {
+  #posts #post-2 {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  #posts #post-1 img,
+  #posts #post-2 img,
   #posts #bottom-posts img {
     margin-block: 2rem 0;
     width: 75%;
     height: auto;
   }
 
-  #posts #post-1,
+  #posts #post-2,
   #posts #right-posts {
     max-width: 100rem;
   }
@@ -595,9 +595,9 @@ main.main-post div strong {
     max-width: 100rem;
   }
 
-  #posts #bottom-posts #post-2,
-  #posts #bottom-posts #post-3,
-  #posts #bottom-posts #post-4 {
+  #posts #bottom-posts #post-5,
+  #posts #bottom-posts #post-6,
+  #posts #bottom-posts #post-7 {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -657,7 +657,7 @@ main.main-post div strong {
     padding-inline: 2rem;
   }
 
-  #posts #post-1 img,
+  #posts #post-2 img,
   #posts #bottom-posts img {
     width: 100%;
   }
