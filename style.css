@@ -443,6 +443,58 @@ main.main-post h2 {
   padding: 0;
 }
 
+main.main-post pre {
+  width: 60rem;
+  border: 10px var(--blue-bg) solid;
+  border-radius: 2rem;
+  padding: 2rem 2rem;
+  background-color: var(--dark-bg) ;
+  margin-inline: auto;
+}
+
+main.main-post code {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #E1E1E6;
+  letter-spacing: 1px;
+}
+
+main.main-post .comment {
+  color: var(--button-bg);
+}
+
+main.main-post .var {
+  color: #FF70C1;
+}
+
+main.main-post .number {
+  color: #68CCDE;
+}
+
+main.main-post .string {
+  color: #e7de79;
+}
+
+main.main-post .function {
+  color: #67e480;
+}
+
+main.main-post .parameter {
+  color: #E89E64;
+}
+
+main.main-post .first-group {
+  color: var(--yellow);
+}
+
+main.main-post .third-group {
+  color: #58C7DA;
+}
+
+main.main-post .empty-content {
+  letter-spacing: 4px;
+}
+
 /* Tablet */
 
 @media (max-width: 800px) {
