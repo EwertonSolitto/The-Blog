@@ -408,11 +408,15 @@ main.main-post > div {
   flex-direction: column;
 }
 
+main.main-post .date {
+  font-size: 2rem ;
+}
+
 main.main-post div img {
   margin: auto;
   height: 52rem;
   width: auto;
-
+  border-radius: 1.6rem;
   margin-bottom: 2.4rem;
 }
 
@@ -633,6 +637,7 @@ main.main-post div strong {
 
   main.main-post div img {
     width: 100%;
+    border-radius: 1.2rem;
     height: auto;
   }
 }
@@ -670,6 +675,12 @@ main.main-post div strong {
   #posts #post-2 img,
   #posts #bottom-posts img {
     width: 100%;
+  }
+
+  /* Post pages */
+
+  main.main-post div img {
+    border-radius: 0.8rem;
   }
 }
 
