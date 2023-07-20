@@ -172,7 +172,7 @@ header > div.yellow-line {
 /* Main */
 
 main {
-  padding-top: calc(17.2rem);
+  padding-top: 17.2rem;
   background-color: var(--blue-bg);
 }
 
@@ -427,6 +427,13 @@ main.main-post div strong {
     min-width: 100vw;
   }
 
+  header > div,
+  section > div,
+  main > div,
+  footer > div {
+    padding-inline: 8rem;
+  }
+
   /* Header */
 
   #header {
@@ -535,14 +542,13 @@ main.main-post div strong {
   /* Main */
 
   main {
-    padding: 14rem 0 0;
+    padding-block: 14rem 0;
   }
 
   #main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-inline: 8rem;
   }
 
   #main #main-text {
@@ -617,18 +623,17 @@ main.main-post div strong {
     flex-direction: column-reverse;
   }
 
-  /* About & Categories & Footer */
-
-  main#categories > div,
-  main#about > div,
-  footer > div {
-    padding-inline: 8rem;
-  }
-
   /* Categories */
 
   main#categories .posts-list {
     grid-template-columns: 1fr;
+  }
+
+  /* Post page */
+
+  main.main-post div img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -646,17 +651,11 @@ main.main-post div strong {
 }
 
 @media (max-width: 600px) {
-  /* Header */
-
-  #header{
+  main > div, #header, #posts, footer > div {
     padding-inline: 2rem;
   }
 
-  /* Main */
-
-  #main {
-    padding-inline: 2rem;
-  }
+    /* Main */
 
   #main h1 {
     font-size: 3.2rem;
@@ -668,21 +667,9 @@ main.main-post div strong {
 
   /* posts */
 
-  #posts {
-    padding-inline: 2rem;
-  }
-
   #posts #post-2 img,
   #posts #bottom-posts img {
     width: 100%;
-  }
-
-  /* About & Categories & Footer */
-
-  main#categories > div,
-  main#about > div,
-  footer > div {
-    padding-inline: 2rem;
   }
 }
 
