@@ -409,7 +409,8 @@ main.main-post > div {
 }
 
 main.main-post .date {
-  font-size: 2rem ;
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
 }
 
 main.main-post div img {
@@ -417,11 +418,26 @@ main.main-post div img {
   height: 52rem;
   width: auto;
   border-radius: 1.6rem;
-  margin-bottom: 2.4rem;
+  margin-bottom: 3.2rem;
 }
 
 main.main-post div strong {
   color: var(--blue-bg);
+}
+
+main.main-post li,
+main.main-post ol {
+  all: unset;
+}
+
+main.main-post ol {
+  padding-block: 2.4rem;
+}
+
+main.main-post h3 {
+  font-size: 2.6rem;
+  color: var(--blue-bg);
+  margin-bottom: 1.2rem;
 }
 
 /* Tablet */
