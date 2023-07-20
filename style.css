@@ -426,18 +426,21 @@ main.main-post div strong {
 }
 
 main.main-post li,
-main.main-post ol {
+main.main-post ol,
+main.main-post ul {
   all: unset;
 }
 
-main.main-post ol {
+main.main-post ol,
+main.main-post ul {
   padding-block: 2.4rem;
 }
 
-main.main-post h3 {
+main.main-post h2 {
   font-size: 2.6rem;
   color: var(--blue-bg);
   margin-bottom: 1.2rem;
+  padding: 0;
 }
 
 /* Tablet */
