@@ -516,7 +516,7 @@ main.main-post .empty-content {
     display: flex;
     justify-content: space-between;
     padding-inline: 8rem;
-    padding-top: 4rem;
+    padding-top: 2rem;
     padding-bottom: 2rem;
   }
 
@@ -764,9 +764,14 @@ main.main-post .empty-content {
     border-radius: 0.8rem;
   }
 
+  main.main-post pre {
+    padding: 1rem;
+    border-width: 1rem;
+  }
+
   main.main-post code {
     font-size: 1rem;
-    line-height: 1.2rem;
+    line-height: 0.8rem;
   }
 }
 
@@ -778,10 +783,16 @@ main.main-post .empty-content {
     height: 16rem;
   }
 
-    /* Post pages */
+  /* Post pages */
+
+  main.main-post pre {
+    padding: .5rem;
+    border-width: .5rem;
+    border-radius: 1.2rem;
+  }
 
   main.main-post code {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     line-height: 1rem;
   }
 }
