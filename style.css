@@ -714,12 +714,9 @@ main.main-post .empty-content {
 
   main.main-post pre {
     width: 100%;
+    word-wrap: break-word;
+    white-space: pre-wrap;
     padding: 1.2rem;
-  }
-
-  main.main-post code {
-    font-size: 1.2rem;
-    line-height: 1.4rem;
   }
 }
 
@@ -763,16 +760,6 @@ main.main-post .empty-content {
   main.main-post div img {
     border-radius: 0.8rem;
   }
-
-  main.main-post pre {
-    padding: 1rem;
-    border-width: 1rem;
-  }
-
-  main.main-post code {
-    font-size: 1rem;
-    line-height: 0.8rem;
-  }
 }
 
 @media (max-width: 400px) {
@@ -781,18 +768,5 @@ main.main-post .empty-content {
 
   main#categories img {
     height: 16rem;
-  }
-
-  /* Post pages */
-
-  main.main-post pre {
-    padding: .5rem;
-    border-width: .5rem;
-    border-radius: 1.2rem;
-  }
-
-  main.main-post code {
-    font-size: 0.8rem;
-    line-height: 1rem;
   }
 }
