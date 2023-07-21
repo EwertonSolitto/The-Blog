@@ -711,6 +711,16 @@ main.main-post .empty-content {
     border-radius: 1.2rem;
     height: auto;
   }
+
+  main.main-post pre {
+    width: 100%;
+    padding: 1.2rem;
+  }
+
+  main.main-post code {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
 }
 
 /* Mobile */
@@ -753,6 +763,11 @@ main.main-post .empty-content {
   main.main-post div img {
     border-radius: 0.8rem;
   }
+
+  main.main-post code {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
 }
 
 @media (max-width: 400px) {
@@ -761,5 +776,12 @@ main.main-post .empty-content {
 
   main#categories img {
     height: 16rem;
+  }
+
+    /* Post pages */
+
+  main.main-post code {
+    font-size: 0.7rem;
+    line-height: 1rem;
   }
 }
