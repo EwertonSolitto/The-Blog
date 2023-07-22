@@ -165,8 +165,7 @@
 <code class="comment">// Criando uma função que contará todos os números de 0</code>
 <code class="comment">// até o número passado como parâmetro</code>
 <code class="var">function <span class="function">contador</span> <span class="first-group">(<span class="parameter">numero</span>) {</span></code>
-<code>  
-  <span class="var">for(let</span> i <span class="var">=</span> <span class="number">0</span>; i <span class="var"><=</span> <span class="parameter">numero</span>; i<span class="var">++) {</span></code>
+<code>  <span class="var">for(let</span> i <span class="var">=</span> <span class="number">0</span>; i <span class="var">&#60;=</span> <span class="parameter">numero</span>; i<span class="var">++) {</span></code>
 <code>    console.<span class="function">log</span><span class="third-group">(</span>i<span class="third-group">)</span></code>
 <code class="var">  }</code>
 <code class="first-group">}</code>
@@ -183,6 +182,104 @@
 
       <p>
         Esses são apenas <strong>alguns dos conceitos básicos da programação</strong>. Conforme você avança em sua jornada, <strong>encontrará conceitos mais avançados</strong> e <strong>técnicas específicas de cada linguagem</strong>. A <strong>prática constante</strong> e a <strong>resolução de problemas reais</strong> são fundamentais para <strong>aprimorar suas habilidades de programação</strong>. Portanto, <strong>não tenha medo de experimentar, errar e aprender com os desafios que encontrar pelo caminho</strong>. Com <strong>dedicação</strong> e <strong>paciência</strong>, você estará preparado para enfrentar projetos cada vez <strong>mais complexos</strong> e <strong>gratificantes</strong> como programador.
+      </p>
+
+      <p>Agora que você já alguns conceitos básicos, vamos avançar no texto e explorar mais conceitos da programação:</p>
+
+      <ul>
+        <li>
+          <h2>Arrays</h2>
+          <p>
+            Um <strong>array</strong> é uma <strong>estrutura de dados que nos permite armazenar uma coleção de elementos em uma única variável</strong>. Cada elemento tem uma posição específica no array, chamada de <strong>índice</strong>. Em JavaScript, <strong>os índices começam em zero</strong>. Vejamos um exemplo de como criar e acessar elementos em um array:
+          </p>
+          <code>
+            <pre>
+<code class="comment">// Criando um array com alguns números</code>
+<code><span class="var">let</span> numeros <span class="var">=</span> <span class="first-group">[</span><span class="number">10</span>, <span class="number">20</span>, <span class="number">30</span>, <span class="number">40</span>, <span class="number">50</span><span class="first-group">]</span>;</code>
+<code></code>
+<code class="comment">// Acessando o elemento no índice 2 (valor 30)</code>
+<code><span class="var">let</span> terceiroNumero <span class="var">=</span> numeros<span class="first-group">[<span class="number">2</span>]</span>;</code>
+<code>console.<span class="function">log</span><span class="first-group">(</span>terceiroNumero<span class="first-group">)</span>; <span class="comment">// Saída: 30</span></code></pre>
+          </code>
+        </li>
+        <li>
+          <h2>Objetos</h2>
+          <p>
+            Em JavaScript, <strong>objetos</strong> são <strong>estruturas de dados que nos permitem representar entidades complexas com propriedades e métodos</strong>. As propriedades são pares de chave-valor, onde a <strong>chave é uma string que representa o nome da propriedade</strong> e o <strong>valor pode ser qualquer tipo de dado</strong>, inclusive outros objetos. Vejamos um exemplo:
+          </p>
+          <pre>
+<code class="comment">// Criando um objeto representando uma pessoa</code>
+<code><span class="var">let</span> pessoa <span class="var">=</span> <span class="first-group">{</span></code>
+<code>  nome<span class="var">:</span> <span class="string">&#39;João&#39;</span>,</code>
+<code>  idade<span class="var">:</span> <span class="number">25</span>,</code>
+<code>  profissao<span class="var">:</span> <span class="string">&#39;Desenvolvedor&#39;</span>,</code>
+<code><span class="first-group">}</span>;</code>
+<code></code>
+<code class="comment">// Acessando as propriedades do objeto</code>
+<code>console.<span class="function">log</span><span class="first-group">(</span>pessoa.nome<span class="first-group">)</span>; <span class="comment">// Saída: João</span></code>
+<code>console.<span class="function">log</span><span class="first-group">(</span>pessoa.idade<span class="first-group">)</span>; <span class="comment">// Saída: 25</span></code>
+<code>console.<span class="function">log</span><span class="first-group">(</span>pessoa.profissao<span class="first-group">)</span>; <span class="comment">// Saída: Desenvolvedor</span></code></pre>
+        </li>
+        <li>
+          <h2>Funções de Array</h2>
+          <p>
+            Em JavaScript, o <strong>objeto Array possui uma variedade de métodos úteis que podem ser aplicados diretamente a arrays</strong>. Esses métodos <strong>facilitam a manipulação</strong> e <strong>processamento dos dados contidos nos arrays</strong>. Vamos ver um exemplo de uso do método &#34;<strong>map</strong>&#34;, que cria um novo array com os resultados de uma função aplicada a cada elemento do array original:
+          </p>
+          <pre>
+<code class="comment">// Criando um array de números</code>
+<code><span class="var">let</span> numeros <span class="var">=</span> <span class="first-group">[</span><span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span><span class="first-group">]</span>;</code>
+<code></code>
+<code class="comment">// Usando o método map para dobrar cada número</code>
+<code><span class="var">let</span> numerosDobrados <span class="var">=</span> numeros.<span class="function">map</span><span class="first-group">(</span><span class="var">(</span><span class="parameter">numero</span><span class="var">) =&#62;</span> numero <span class="var">*</span> <span class="number">2</span><span class="first-group">)</span>;</code>
+<code>console.<span class="function">log</span><span class="first-group">(</span>numerosDobrados<span class="first-group">)</span>; <span class="comment">// Saída: [2, 4, 6, 8, 10]</span></code></pre>
+        </li>
+        <li>
+          <h2>Orientação a Objetos</h2>
+          <p>
+            JavaScript suporta <strong>programação orientada a objetos</strong>, onde podemos criar classes e <strong>instanciar objetos baseados nessas classes</strong>. Uma <strong>classe</strong> é <strong>uma &#34;receita&#34; para criar objetos com propriedades e métodos comuns</strong>. Vejamos um exemplo de uma classe &#34;Pessoa&#34;:
+          </p>
+          <pre>
+<code class="comment">// Definindo a classe Pessoa</code>
+<code><span class="var">class</span> <span class="class">Pessoa</span> <span class="first-group">{</span></code>
+<code><span class="var">  constructor</span><span class="var">(</span><span class="parameter">nome</span>, <span class="parameter">idade</span><span class="var">) {</span></code>
+<code>    <span class="number">this</span>.nome <span class="var">=</span> nome;</code>
+<code>    <span class="number">this</span>.idade <span class="var">=</span> idade;</code>
+<code class="var">  }</code>
+<code></code>
+<code class="var">  <span class="function">saudacao</span>() {</code>
+<code>    console.<span class="function">log</span><span class="third-group">(</span><span class="string">&#96;Olá, meu nome é </span><span class="first-group">${</span><span class="number">this</span>.nome<span class="first-group">}</span><span class="string"> e tenho </span><span class="first-group">${</span><span class="number">this</span>.idade<span class="first-group">}</span><span class="string"> anos.&#96;</span><span class="third-group">)</span>;</code>
+<code class="var">  }</code>
+<code class="first-group">}</code>
+<code></code>
+<code class="comment">// Criando um objeto pessoa a partir da classe</code>
+<code><span class="var">let</span> pessoa1 <span class="var">=</span> <span class="new var">new</span> <span class="function">Pessoa</span><span class="first-group">(</span><span class="string">&#39;Maria&#39;</span>, <span class="number">30</span><span class="first-group">)</span>;</code>
+<code><span class="var">let</span> pessoa2 <span class="var">=</span> <span class="new var">new</span> <span class="function">Pessoa</span><span class="first-group">(</span><span class="string">&#39;Carlos&#39;</span>, <span class="number">28</span><span class="first-group">)</span>;</code>
+<code></code>
+<code>pessoa1.<span class="function">saudacao</span><span class="first-group">()</span>; <span class="comment">// Saída: Olá, meu nome é Maria e tenho 30 anos.</span></code>
+<code>pessoa2.<span class="function">saudacao</span><span class="first-group">()</span>; <span class="comment">// Saída: Olá, meu nome é Carlos e tenho 28 anos.</span></code></pre>
+        </li>
+      </ul>
+
+      <p>
+        Esses são apenas alguns dos <strong>conceitos mais importantes em programação usando JavaScript</strong>. À medida que você <strong>continua aprendendo</strong> e <strong>praticando</strong>, descobrirá muitos outros recursos poderosos que essa linguagem tem a oferecer. Lembre-se de <strong>sempre aplicar esses conceitos em projetos práticos</strong>, pois é a <strong>melhor maneira de aprimorar suas habilidades de programação</strong>.
+      </p>
+      <p>
+        À medida que você se aprofunda na programação, percebe que o <strong>universo desse campo é vasto e emocionante</strong>. Além dos conceitos abordados aqui, existem muitos outros tópicos interessantes a explorar, como <strong>assincronismo</strong>, <strong>manipulação de eventos</strong>, <strong>acesso a APIs externas</strong> e muito mais.
+      </p>
+      <p>
+        Portanto, encorajo você a continuar estudando e praticando, seja <strong>resolvendo problemas em plataformas de programação</strong>, <strong>participando de projetos de código aberto</strong> ou <strong>criando suas próprias aplicações</strong>. Com <strong>cada desafio superado</strong>, você <strong>ganhará mais confiança</strong> e <strong>habilidades</strong> para <strong>enfrentar problemas complexos</strong> e <strong>criar soluções inovadoras</strong>.
+      </p>
+      <p>
+        Lembre-se de que <strong>a programação é uma jornada de aprendizado contínuo</strong>. Não tenha medo de cometer erros, pois é através deles que <strong>aprendemos</strong> e <strong>evoluímos</strong> como desenvolvedores. Aproveite a <strong>comunidade ativa de programadores</strong>, onde você pode <strong>compartilhar conhecimentos</strong>, <strong>obter ajuda</strong> e <strong>se inspirar em outras pessoas</strong>.
+      </p>
+      <p>
+        Espero que este post tenha lhe proporcionado uma <strong>visão geral dos fundamentos da programação</strong>. Agora é o momento de <strong>mergulhar mais fundo</strong>, <strong>explorar novos conceitos</strong> e <strong>aplicações</strong>, e, acima de tudo, <strong>aproveitar o processo de criação através da programação</strong>.
+      </p>
+      <p>
+        <strong>Aproveite essa jornada</strong>, <strong>celebre suas conquistas</strong> e <strong>nunca deixe de explorar e descobrir coisas novas</strong>. A programação é uma <strong>habilidade poderosa</strong> que pode <strong>abrir portas para inúmeras oportunidades e projetos incríveis</strong>. Então, <strong>coloque a mão na massa</strong> e <strong>continue progredindo em direção a um futuro brilhante como desenvolvedor</strong>!
+      </p>
+      <p>
+        Boa codificação e sucesso em sua jornada de programação!
       </p>
     </div>  
   </main>
