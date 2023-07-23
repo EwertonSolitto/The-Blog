@@ -51,7 +51,7 @@
     <div>
         <h1>Entre em contato conosco</h1>
 
-        <form>
+        <form action="" method="post">
             <div>
                 <label for="name">Nome:</label>
                 <input type="text" id="name" name="name" required>
@@ -67,7 +67,7 @@
                 <textarea id="message" name="message" rows="12" required></textarea>
             </div>
 
-            <button type="button">Enviar Mensagem</button>
+            <button id="formButton" type="submit">Enviar Mensagem</button>
         </form>
     </div>
   </main>
@@ -82,5 +82,6 @@
 </footer>
   
   <script src="../index.js"></script>
+  <script src="./form.js"></script>
 </body>
 </html>
