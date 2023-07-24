@@ -521,6 +521,12 @@ main.main-post .empty-content {
   letter-spacing: 4px;
 }
 
+main.main-post .author {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
 /* Contato */
 
 main#contact form {
@@ -820,8 +826,7 @@ main#contact :is(input, textarea) {
 
   /* posts */
 
-  #posts #post-2 img,
-  #posts #bottom-posts img {
+  #posts :is(#post-2, #bottom-posts) img {
     width: 100%;
   }
 
