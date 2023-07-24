@@ -75,7 +75,7 @@ header {
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 0.9fr 1fr 1.2fr;
-  padding-block: 6.4rem 3.2rem;
+  padding-block: 3.2rem 3.2rem;
   margin-inline: auto;
 }
 
@@ -166,7 +166,7 @@ header > div.yellow-line {
 /* Main */
 
 main {
-  padding-top: 17.2rem;
+  padding-top: 14.2rem;
   background-color: var(--blue-bg);
 }
 
@@ -592,8 +592,7 @@ main#contact :is(input, textarea) {
     width: 100vw;
     display: flex;
     justify-content: space-between;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-block: 2rem;
   }
 
   #logo {
@@ -693,7 +692,7 @@ main#contact :is(input, textarea) {
   /* Main */
 
   main {
-    padding-block: 14rem 0;
+    padding-block: 12rem 0;
   }
 
   #main {
