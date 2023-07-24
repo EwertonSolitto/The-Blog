@@ -16,8 +16,8 @@ It's a blog for developers, with publications to the most advanced. All the post
 # Layout Mobile 📱
 
 <p>
-  <img src="https://github.com/EwertonSolitto/RocketBlog/blob/main/images/readMe/mobile-1.png" />
-  <img src="https://github.com/EwertonSolitto/RocketBlog/blob/main/images/readMe/mobile-2.png" />
+  <img src="https://github.com/EwertonSolitto/RocketBlog/blob/main/images/readMe/mobile-1.png" width="410" />
+  <img src="https://github.com/EwertonSolitto/RocketBlog/blob/main/images/readMe/mobile-2.png" width="410" />
 </p>
 
 # Technologies ⚡
