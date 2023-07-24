@@ -51,7 +51,7 @@ section, main, footer {
   justify-content: center;
 }
 
-:is(header, section, main, footer) > div {
+:is(header, section, main, footer) > :is(div, article) {
   padding: 3.2rem 13.6rem;
   width: 144rem;
 }
@@ -398,7 +398,7 @@ footer div p {
 
 /* Post pages */
 
-main.main-post > div {
+main.main-post > article {
   display: flex;
   flex-direction: column;
 }
@@ -408,7 +408,7 @@ main.main-post .date {
   margin-bottom: 0.4rem;
 }
 
-main.main-post div img {
+main.main-post article img {
   margin: auto;
   height: 52rem;
   width: auto;
@@ -416,7 +416,7 @@ main.main-post div img {
   margin-bottom: 3.2rem;
 }
 
-main.main-post div strong {
+main.main-post article strong {
   color: var(--blue-bg);
 }
 
@@ -576,7 +576,7 @@ main#contact :is(input, textarea) {
     min-width: 100vw;
   }
 
-  :is(header, footer, section, main) > div {
+  :is(header, footer, section, main) > :is(div, article) {
     padding-inline: 8rem;
   }
 
@@ -772,7 +772,7 @@ main#contact :is(input, textarea) {
 
   /* Post page */
 
-  main.main-post div img {
+  main.main-post article img {
     width: 100%;
     border-radius: 1.2rem;
     height: auto;
@@ -804,7 +804,7 @@ main#contact :is(input, textarea) {
 }
 
 @media (max-width: 600px) {
-  :is(main, header, section, footer) > div {
+  :is(main, header, section, footer) > :is(div, article) {
     padding-inline: 2rem;
   }
 
@@ -827,7 +827,7 @@ main#contact :is(input, textarea) {
 
   /* Post pages */
 
-  main.main-post div img {
+  main.main-post article img {
     border-radius: 0.8rem;
   }
 }
