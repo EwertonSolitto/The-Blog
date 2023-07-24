@@ -51,18 +51,12 @@ section, main, footer {
   justify-content: center;
 }
 
-header > div,
-section > div,
-main > div,
-footer > div {
+:is(header, section, main, footer) > div {
   padding: 3.2rem 13.6rem;
   width: 144rem;
 }
 
-h2 > a:hover,
-h2 > a:focus,
-h3 > a:hover,
-h3 > a:focus {
+:is(h2, h3) > a:is(:hover, :focus) {
   text-decoration: underline;
 }
 
@@ -81,7 +75,7 @@ header {
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 0.9fr 1fr 1.2fr;
-  padding: 6.4rem 13.6rem 3.2rem;
+  padding-block: 6.4rem 3.2rem;
   margin-inline: auto;
 }
 
@@ -250,6 +244,10 @@ main {
 
 /* posts */
 
+#posts article {
+  align-items: center;
+}
+
 #posts-background {
   display: flex;
   justify-content: center;
@@ -316,14 +314,12 @@ article img {
 
 /* About & Categories & Post pages & Contact */
 
-main#about, main#categories, main.main-post, main#contact {
+main:is(#about, #categories, .main-post, #contact) {
   background-color: var(--light-blue);
 }
 
-main#about h1,
-main#categories h1,
-main.main-post h1,
-main#contact h1 {
+
+:is(main#about, main#categories, main.main-post, main#contact) h1 {
   font-size: 3.6rem;
   color: var(--blue-bg);
   margin-bottom: 2.4rem;
@@ -331,8 +327,7 @@ main#contact h1 {
 
 /* About & Post pages */
 
-main#about p,
-main.main-post p {
+:is(main#about, main.main-post) p {
   font-size: 2rem;
   text-align: justify;
   line-height: 2.4rem;
@@ -340,8 +335,7 @@ main.main-post p {
   line-height: 3rem;
 }
 
-main#about p::before,
-main.main-post p::before {
+:is(main#about, main.main-post) p::before {
   content: '';
   margin-left: 4rem;
 }
@@ -426,14 +420,11 @@ main.main-post div strong {
   color: var(--blue-bg);
 }
 
-main.main-post li,
-main.main-post ol,
-main.main-post ul {
+main.main-post :is(li, ol, ul) {
   all: unset;
 }
 
-main.main-post ol,
-main.main-post ul {
+main.main-post :is(ol, ul) {
   padding-block: 2.4rem;
 }
 
@@ -518,8 +509,7 @@ main#contact form div {
   gap: 0.8rem;
 }
 
-main#contact label,
-main#contact button {
+main#contact :is(label, button) {
   font-size: 2rem;
   color: var(--blue-bg);
 }
@@ -539,14 +529,12 @@ main#contact button {
   margin-inline: auto;
 }
 
-main#contact button:focus,
-main#contact button:hover {
+main#contact :is(button:focus, button:hover) {
   background-color: var(--blue-bg);
   transition: 0.3s;
 }
 
-main#contact input,
-main#contact textarea {
+main#contact :is(input, textarea) {
   background-color: var(--light-blue);
   color: var(--blue-bg);
   padding: 0.8rem;
@@ -562,10 +550,7 @@ main#contact textarea {
     min-width: 100vw;
   }
 
-  header > div,
-  section > div,
-  main > div,
-  footer > div {
+  :is(header, footer, section, main) > div {
     padding-inline: 8rem;
   }
 
@@ -575,7 +560,6 @@ main#contact textarea {
     width: 100vw;
     display: flex;
     justify-content: space-between;
-    padding-inline: 8rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
@@ -713,7 +697,7 @@ main#contact textarea {
   /* posts */
 
   #posts {
-    padding: 5rem 8rem;
+    padding-block: 5rem;
     display: flex;
     flex-direction: column;
   }
@@ -731,15 +715,13 @@ main#contact textarea {
     flex-direction: column-reverse;
   }
 
-  #posts #post-2 img,
-  #posts #bottom-posts img {
+  #posts :is(#post-2, #bottom-posts) img {
     margin-block: 2rem 0;
     width: 75%;
     height: auto;
   }
 
-  #posts #post-2,
-  #posts #right-posts {
+  #posts :is(#post-2, #right-posts) {
     max-width: 100rem;
   }
 
@@ -751,9 +733,7 @@ main#contact textarea {
     max-width: 100rem;
   }
 
-  #posts #bottom-posts #post-5,
-  #posts #bottom-posts #post-6,
-  #posts #bottom-posts #post-7 {
+  #posts #bottom-posts :is(#post-5, #post-6, #post-7) {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -794,7 +774,7 @@ main#contact textarea {
 }
 
 @media (max-width: 600px) {
-  main > div, #header, #posts, footer > div {
+  :is(main, header, section, footer) > div {
     padding-inline: 2rem;
   }
 
