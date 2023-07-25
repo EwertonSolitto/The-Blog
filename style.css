@@ -312,14 +312,14 @@ article img {
   border-radius: 0.8rem;
 }
 
-/* About & Categories & Post pages & Contact */
+/* About & Categories & Post pages & Contact & Search */
 
-main:is(#about, #categories, .main-post, #contact) {
+main:is(#about, #categories, .main-post, #contact, #search-div) {
   background-color: var(--light-blue);
 }
 
 
-:is(main#about, main#categories, main.main-post, main#contact) h1 {
+main:is(#about, #categories, .main-post, #contact, #search-div) h1 {
   font-size: 3.6rem;
   color: var(--blue-bg);
   margin-bottom: 2.4rem;
@@ -575,6 +575,67 @@ main#contact :is(input, textarea) {
   border-radius: 0.4rem;
 }
 
+/* Search */
+
+main#search-div div form {
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+main#search-div div input {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  font-size: 1.6rem;
+  border: 0.2rem var(--blue-bg) solid;
+  background-color: var(--light-grey);
+}
+
+main#search-div div button {
+  width: 20rem;
+  padding: 0.8rem;
+  border-radius: 0.6rem;
+  color: var(--light-blue);
+  background-color: var(--button-bg);
+  font-size: 2rem;
+  border: 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+main#search-div div button:hover {
+  background-color: var(--blue-bg);
+  transition: 0.3s;
+} 
+
+main#search-div #search-result {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+}
+
+main#search-div #search-result > div {
+  display: flex;
+  flex-direction: column;
+}
+
+main#search-div img {
+  width: 100%;
+  border-radius: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+main#search-div p {
+  font-size: 1.6rem;
+}
+
+main#search-div #search-result div.disapper {
+  display: none;
+}
+
 /* Tablet */
 
 @media (max-width: 800px) {
@@ -792,6 +853,13 @@ main#contact :is(input, textarea) {
     word-wrap: break-word;
     white-space: pre-wrap;
     padding-block: 1.2rem;
+  }
+
+  /* Search */
+
+  main#search-div #search-result {
+    grid-template-columns: 1fr;
+    gap: 6rem;
   }
 }
 

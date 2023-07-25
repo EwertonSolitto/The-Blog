@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>The Blog - Pesquisa</title>
+</head>
+<body>
+  <header>
+    <div id="header">
+        <div id="logo">
+            <a href="../index.html">The Blog<span>.</span></a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">Sobre</a></li>
+                <li><a href="./categories.html">Categorias</a></li>
+                <li><a href="./contact.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div id="search">
+            <label 
+            for="search" 
+            class="sr-only">Campo de Busca:</label>
+            <input 
+            type="search" 
+            id="search-button"
+            name="search"
+            placeholder="Buscar">
+            <button><img src="../images/search.svg" alt="Botão de pesquisa" id="button"></button>
+        </div>
+        <div id="menu-button">
+            <button id='open-button' onclick="handleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#4D7FA8" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="40" y1="128" x2="216" y2="128" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="40" y1="64" x2="216" y2="64" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="40" y1="192" x2="216" y2="192" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+            </button>
+            <button id="close-button" onclick="handleMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#4D7FA8" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="200" y1="56" x2="56" y2="200" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="200" y1="200" x2="56" y2="56" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+            </button>
+        </div>
+    </div>    
+    <div class="yellow-line"></div>
+  </header>
+
+  <main id="search-div">
+    <div>
+      <h1>Pesquisa</h1>
+
+      <search id="search-form">
+        <form action="./search.html">
+          <label class="sr-only" for="search-input">Pesquisar postagem</label>
+          <input type="search" id="search-input" name="search-input" />
+          <button type="submit">Pesquisar</button>
+        </form>
+      </search>
+
+
+      <div id="search-result">
+        <div class="search-response">
+          <img src="../images/post-1.png" alt="Imagem post 1">
+          <time pubdate datetime="2023-07-20" title="July 20th, 2023" class="date">Julho 20, 2023</time>
+          <h2><a href="./posts/post-1.html">Descubra as principais tendências em programação para ficar de olho em 2023</a></h2>
+          
+          <p>
+            No mundo da programação, estar atualizado com as últimas tendências e tecnologias é fundamental para se manter competitivo.
+          </p>
+        </div>
+
+        <div class="search-response">
+          <time pubdate datetime="2023-07-18" title="july 18th, 2023" class="date">Julho 18, 2023</time>
+          <h2><a href="./posts/post-4.html">Aprenda os fundamentos da programação de forma simples e prática</a></h2>
+         
+          <p>
+            Se você está começando sua jornada no mundo da programação, pode parecer assustador à primeira vista. No entanto, dominar os fundamentos é essencial para construir uma base sólida e alcançar o sucesso como desenvolvedor.
+          </p>
+        </div>
+
+        <div class="search-response">
+          <time pubdate datetime="2023-07-17" title="July 17th, 2023" class="date">Julho 17, 2023</time>
+          <h2><a href="./posts/post-3.html">Como se preparar para uma entrevista de emprego em programação</a></h2>
+         
+          <p>
+            Conseguir uma entrevista de emprego na área de programação é uma grande conquista, mas a jornada para garantir a vaga desejada está apenas começando.
+          </p>
+        </div>
+
+        <div class="search-response">
+          <img src="../images/post-2.png" alt="Imagem post 2">
+          <time pubdate datetime="2023-07-16" title="July 16th, 2023" class="date">Julho 16, 2023</time>
+          <h2><a href="./posts/post-2.html">As 10 linguagens de programação mais promissoras para aprender em 2023</a></h2>
+         
+          <p>
+            No mundo da programação, a única constante é a mudança. A cada ano, novas linguagens de programação emergem, outras se fortalecem e algumas podem até perder relevância.
+          </p>
+        </div>
+
+        <div class="search-response">
+          <img src="../images/post-5.png" alt="Imagem post 5">
+          <time pubdate datetime="2023-07-14" title="July 14th, 2023" class="date">Julho 14, 2023</time>
+          <h2><a href="./posts/post-5.html">Como lidar com bugs e depuração de código de forma eficiente</a></h2>
+         
+          <p>
+            Quando você está construindo uma aplicação complexa ou um projeto extenso, é comum encontrar erros e comportamentos inesperados que podem atrasar o desenvolvimento e afetar a qualidade do seu produto final.
+          </p>     
+        </div>
+
+        <div class="search-response">
+          <img src="../images/post-6.png" alt="Imagem post 6">
+          <time pubdate datetime="2023-07-12" title="July 12th, 2023" class="date">Julho 12, 2023</time>
+          <h2><a href="./posts/post-6.html">Os segredos para escrever um código limpo e legível</a></h2>
+         
+          <p>
+            Escrever código é como criar uma obra de arte digital. Cada linha de código é uma pincelada que dá vida às suas ideias e funcionalidades. Mas assim como uma pintura, a beleza e a eficiência do código também estão na organização, clareza e limpeza.
+          </p>
+        </div>
+
+        <div class="search-response">
+          <img src="../images/post-7.png" alt="Imagem post 7">
+          <time pubdate datetime="2023-07-10" title="July 10th, 2023" class="date">Julho 10, 2023</time>
+          <h2><a href="./posts/post-7.html">Dicas e truques para acelerar o desenvolvimento de aplicativos</a></h2>
+         
+          <p>
+            Desenvolver aplicativos pode ser uma tarefa complexa e exigente, especialmente quando há prazos apertados e a pressão para entregar resultados é constante.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div>
+        <div id="logo">
+            <a href="../index.html">The Blog<span>.</span></a>
+        </div>
+        <p>© 2023 The Blog. | Todos os Direitos Reservados</p>
+    </div>
+  </footer>
+
+  <script src="../index.js"></script>
+  <script src="./javascript/search.js"></script>
+</body>
+</html>
