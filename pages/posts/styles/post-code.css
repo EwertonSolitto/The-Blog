@@ -15,6 +15,7 @@ main.main-post .top-code {
   border-radius: 2rem 2rem 0 0;
   padding: 0.8rem 2rem;
   color: #8FB1CC;
+  margin-top: 2rem;
 }
 
 main.main-post button {
@@ -34,6 +35,7 @@ main.main-post pre {
   border-bottom: 1rem var(--blue-bg) solid;
   border-radius: 0 0 2rem 2rem;
   padding: 2rem;
+  margin-bottom: 2rem;
 }
 
 main.main-post code {
@@ -100,3 +102,11 @@ main.main-post .empty-content {
     padding-block: 1.2rem;
   }
 }  
+
+/* Mobile */
+
+@media (max-width: 380px) {
+  main.main-post :is(.top-code, pre) {
+    width: 90lvw;
+  }
+}
