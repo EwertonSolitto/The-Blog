@@ -1,0 +1,102 @@
+@import '../../../global.css';
+
+main.main-post :is(.top-code, pre) {
+  width: 72rem;
+  margin-inline: auto;
+  border-inline: 1rem var(--blue-bg) solid;
+  background-color: var(--dark-bg);
+  font-size: 1.6rem;
+}
+
+main.main-post .top-code {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1rem var(--blue-bg) solid;
+  border-radius: 2rem 2rem 0 0;
+  padding: 0.8rem 2rem;
+  color: #8FB1CC;
+}
+
+main.main-post button {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  gap: 0.4rem;
+}
+
+main.main-post .copied :is(span, svg) {
+  color: #67e480;
+  fill: #67e480;
+}
+
+main.main-post pre {
+  border-top: 0.5rem var(--blue-bg) solid;
+  border-bottom: 1rem var(--blue-bg) solid;
+  border-radius: 0 0 2rem 2rem;
+  padding: 2rem;
+}
+
+main.main-post code {
+  line-height: 2.4rem;
+  color: #E1E1E6;
+  letter-spacing: 1px;
+}
+
+main.main-post .comment {
+  color: var(--button-bg);
+}
+
+main.main-post .var {
+  color: #FF70C1;
+}
+
+main.main-post .number {
+  color: #68CCDE;
+}
+
+main.main-post .string {
+  color: #e7de79;
+}
+
+main.main-post .function {
+  color: #67e480;
+}
+
+main.main-post .parameter {
+  color: #E89E64;
+}
+
+main.main-post .first-group {
+  color: var(--yellow);
+}
+
+main.main-post .third-group {
+  color: #58C7DA;
+}
+
+main.main-post .class {
+  color :#8FB1CC;
+}
+
+main.main-post .new {
+  font-weight: 700;
+}
+
+main.main-post .empty-content {
+  letter-spacing: 4px;
+}
+
+/* Tablet */
+
+@media (max-width: 800px) {
+  main.main-post :is(.top-code, pre) {
+    width: 100%;
+    padding-inline: 1.2rem;
+  }
+
+  main.main-post pre {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    padding-block: 1.2rem;
+  }
+}  

@@ -1,0 +1,60 @@
+@import "../../global.css";
+
+main#categories {
+  background-color: var(--light-blue);
+}
+
+main#categories h1 {
+  font-size: 3.6rem;
+  color: var(--blue-bg);
+  margin-bottom: 2.4rem;
+}
+
+main#categories h2 {
+  font-size: 2.6rem;
+  margin-bottom: 0.8rem;
+}
+
+main#categories .posts-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.6rem;
+}
+
+main#categories .category-post {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.6rem;
+}
+
+main#categories img {
+  width: auto;
+  height: 20rem;
+  margin-inline: auto;
+  border-radius: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+main#categories h3 {
+  font-size: 2rem;
+  color: var(--blue-bg);
+  margin-top: 0.8rem;
+}
+
+main#categories p {
+  font-size: 1.8rem;
+  text-align: justify;
+  margin-top: 1rem;
+}
+
+@media (max-width: 800px) {
+    main#categories .posts-list {
+      grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 400px) {
+  main#categories img {
+    height: 16rem;
+  }
+}
