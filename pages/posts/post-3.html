@@ -25,17 +25,18 @@
                 <li><a href="../contact.html">Contato</a></li>
             </ul>
         </nav>
-        <div id="search">
+        <form id="search" action="../search.html">
             <label 
             for="search" 
             class="sr-only">Campo de Busca:</label>
             <input 
+            required
             type="search" 
             id="search-button"
             name="search"
             placeholder="Buscar">
-            <button><img src="../../images/search.svg" alt="Botão de pesquisa" id="button"></button>
-        </div>
+            <button><img src="../../images/search.svg" alt="Botão de pesquisa"></button>
+        </form>
         <div id="menu-button">
             <button id='open-button' onclick="handleMenu()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#4D7FA8" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="40" y1="128" x2="216" y2="128" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="40" y1="64" x2="216" y2="64" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="40" y1="192" x2="216" y2="192" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>

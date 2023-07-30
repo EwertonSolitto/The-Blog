@@ -1,7 +1,12 @@
+const form = document.querySelector('#search-form').querySelector('form')
+const input = form.querySelector('#search-input')
 const posts = document.querySelectorAll('.search-response')
-const input = document.querySelector('#search-input')
+const search = document.querySelector('#search')
+const button = form.querySelector('button')
 
-document.querySelector('form').addEventListener('submit', (event) => {
+input.value = document.URL.slice(document.URL.search('search=') + 7, document.URL.length)
+
+form.addEventListener('submit', (event) => {
   event.preventDefault()
   posts.forEach((post) => {
     if (post.querySelector('h2').textContent.toUpperCase().search(input.value.toUpperCase()) !== -1) {
@@ -10,3 +15,13 @@ document.querySelector('form').addEventListener('submit', (event) => {
     return post.classList.add('disapper')
   })
 })
+
+search.addEventListener('submit', (event) => {
+  event.preventDefault()
+  const searchInput = search.querySelector('input')
+  input.value = searchInput.value
+  searchInput.value = ''
+  button.click()
+})
+
+button.click()
