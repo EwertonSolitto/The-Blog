@@ -8,8 +8,8 @@ main.main-post :is(ol, ul) {
   padding-block: 2.4rem;
 }
 
-main.main-post :is(ol, ul) li p {
-  margin-bottom: 0;
+main.main-post :is(ol, ul) li :is(p, pre) {
+  margin-bottom: 2rem;
 }
 
 main.main-post h2:first-child {

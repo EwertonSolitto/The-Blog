@@ -35,7 +35,6 @@ main.main-post pre {
   border-bottom: 1rem var(--blue-bg) solid;
   border-radius: 0 0 2rem 2rem;
   padding: 2rem;
-  margin-bottom: 2rem;
 }
 
 main.main-post code {
