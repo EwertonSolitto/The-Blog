@@ -37,13 +37,13 @@
             <button><img src="../../images/search.svg" alt="Botão de pesquisa"></button>
         </form>
         <div id="menu-button">
-            <button id='open-button' onclick="handleMenu()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#4D7FA8" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="40" y1="128" x2="216" y2="128" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="40" y1="64" x2="216" y2="64" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="40" y1="192" x2="216" y2="192" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
-            </button>
-            <button id="close-button" onclick="handleMenu()">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#4D7FA8" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="200" y1="56" x2="56" y2="200" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="200" y1="200" x2="56" y2="56" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
-            </button>
-        </div>
+          <button id='open-button' onclick="handleMenu()" aria-label="abrir menu">
+              <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#4D7FA8" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="40" y1="128" x2="216" y2="128" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="40" y1="64" x2="216" y2="64" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="40" y1="192" x2="216" y2="192" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+          </button>
+          <button id="close-button" onclick="handleMenu()" aria-label="fechar menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#4D7FA8" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="200" y1="56" x2="56" y2="200" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="200" y1="200" x2="56" y2="56" stroke="#4D7FA8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+          </button>
+      </div>
     </div>   
     <div class="yellow-line"></div> 
   </header>
@@ -53,6 +53,8 @@
       <time pubdate datetime="2023-07-14" title="July 14th, 2023" class="date">Julho 14, 2023</time>
       <address class="author">Por <a rel="author" href="#">ChatGPT 3.5</a>.</address>
       <h1>Como lidar com bugs e depuração de código de forma eficiente</h1>
+
+      <img width="780" height="520" src="../../images/post-5.png" alt="Imagem post 5">
 
       <p>
         A <strong>depuração de código</strong> e a <strong>busca por bugs</strong> são <strong>desafios inevitáveis</strong> para qualquer desenvolvedor. Quando você está <strong>construindo uma aplicação complexa</strong> ou <strong>um projeto extenso</strong>, é comum encontrar <strong>erros</strong> e <strong>comportamentos inesperados</strong> que podem <strong>atrasar o desenvolvimento</strong> e <strong>afetar a qualidade do seu produto final</strong>.
