@@ -220,7 +220,7 @@ footer div p {
   /* Header */
 
   #header {
-    width: 100vw;
+    width: 100lvw;
     display: flex;
     justify-content: space-between;
     padding-block: 2rem;
@@ -257,9 +257,10 @@ footer div p {
   /* Menu */
 
   #header.opened-menu {
+    height: 100lvh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 48rem 18rem;
+    grid-template-rows: 1fr 4fr 1fr;
   }
 
   #header.opened-menu #logo {
@@ -308,6 +309,7 @@ footer div p {
   #header.opened-menu #menu-button {
     display: flex;
     justify-content: flex-end;
+    height: 6rem;
 
     grid-column-start: 3;
   }
