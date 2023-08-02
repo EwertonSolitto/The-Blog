@@ -2,6 +2,7 @@
   --dark-bg: #021321;
   --blue-bg: #082035;
   --button-bg: #6593B8;
+  --button-dark-bg: #4D7FA8;
   --light-blue: #DFECF7;
   --yellow: #F5E900;
   --light-grey: #EBF5FF;
@@ -162,7 +163,7 @@ a span {
 }
 
 #search button {
-  background: var(--button-bg);
+  background: var(--button-dark-bg);
   padding: 0 2.3rem;
   border-radius: 0 0.5rem 0.5rem 0;
   border: 0;

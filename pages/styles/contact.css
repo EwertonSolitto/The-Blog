@@ -36,7 +36,7 @@ main#contact button {
   border-radius: 0.6rem;
   padding: 1.6rem;
   border: none;
-  background-color: var(--button-bg);
+  background-color: var(--button-dark-bg);
   color: var(--light-blue);
   cursor: pointer;
   margin-inline: auto;

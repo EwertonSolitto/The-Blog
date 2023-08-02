@@ -33,7 +33,7 @@ main#search-div div button {
   padding: 0.8rem;
   border-radius: 0.6rem;
   color: var(--light-blue);
-  background-color: var(--button-bg);
+  background-color: var(--button-dark-bg);
   font-size: 2rem;
   border: 0;
   cursor: pointer;
