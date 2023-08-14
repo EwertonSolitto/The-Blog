@@ -41,7 +41,9 @@ main.main-post article img {
   margin-bottom: 3.2rem;
 }
 
-main.main-post article strong {
+main.main-post article :is(strong, em, i,  b) {
+  all: unset;
+  font-weight: bold;
   color: var(--blue-bg);
 }
 
